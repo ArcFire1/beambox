@@ -1,0 +1,533 @@
+/* main changes */
+
+/* header section */
+header {
+    background-color: #f3fbff;
+    background-image: url('../img/header-cover.png');
+    background-repeat: no-repeat;
+    background-position: bottom center;
+}
+.header-nav {
+    padding-top: 20px;
+}
+.main-menu {
+    margin-top: 10px;
+    font-family: 'Circular Std Book';
+    display: flex;
+    justify-content: center;
+
+}
+.main-menu li a {
+    padding: 0 10px;
+    text-decoration: none;
+    color: #84919c;
+    font-size: 16px;
+    transition: 0.5s ease;
+}
+.main-menu li a:hover {
+    color: #000;
+}
+.user-panel {
+    display: flex;
+    margin-top: 8px;
+    justify-content: flex-end;
+    align-items: center;
+}
+.user-panel li a {
+    font-family: 'Circular Std Book';
+    font-size: 14px;
+    text-decoration: none;
+    color: #2c3e50;
+}
+.login {
+    margin-right: 31px;
+}
+.sign-up {
+    padding: 12px 35px;
+    border: 1px solid #83cd32;
+    border-radius: 3px;
+    transition: 0.5s ease;
+}
+.sign-up:hover, .sign-up a:hover {
+    color: #fff;
+    background: #83cd32;
+    box-shadow: 0 0 10px #83cd32;
+}
+.header-content {
+    margin-top: 150px;
+    text-align: center;
+}
+.header-content > h2 {
+    font-family: 'Circular Std Bold';
+    color: #2c3e50;
+    font-size: 42px;
+}
+.header-content > p {
+    font-size: 20px;
+    font-family: "Circular Std Book";
+    color: rgb(159, 169, 177);
+    line-height: 1.7;     
+}
+.price-links {
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 380px;
+}
+.price-links p {
+    margin-left: 25px;
+    font-size: 14px;
+    color: rgb(159, 169, 177);
+    font-family: 'Circular Std Book';
+}
+.price-links p a {
+    color: #83cd32;
+}
+/* resp section */
+.resp-items {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    height: 190px;  
+    margin: 50px 0;
+    box-shadow: 5px 8.66px 60px 0px rgba(50, 117, 208, 0.1);
+    border-radius: 3px;  
+    transition: 1s ease;
+}
+.resp-items img {
+    margin-top: 35px;
+    align-self: center;
+}
+.resp-items p {
+    position: absolute;
+    bottom: 50px;
+    width: 100%;
+    color: #2c3e50;
+    font-family: 'Circular Std Book';
+    font-size: 14px;
+}
+.resp-items:hover {
+    transition: 1s ease;
+    box-shadow: 5px 8.66px 60px 0px rgba(50, 117, 208, 0.5);
+}
+.resp-items::after {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    content: "";
+    left: 40%;
+    width: 20%;
+    height: 4px;
+    background-color: rgb(29, 171, 242);
+    transition: 1s ease;
+    opacity: 0;
+}
+.resp-items:hover::after{
+    opacity: 1;
+}
+/* steps section */
+.steps {
+    margin-top: 50px;
+}
+.steps h2 {
+    text-align: center;
+    font-family: 'Circular Std Medium';
+    color: #2c3e50;
+    font-size: 32px;
+}
+.steps-items {
+    display: flex;
+    margin-top: 80px;
+    margin-bottom: 100px;
+    width: 100%;
+    justify-content: space-between;
+}
+.step-item {
+    position: relative;
+    text-align: center;
+    width: 33%;
+}
+.step-item h4 {
+    margin-top: 48px;
+    font-family: "Proxima Nova", serif;
+    line-height: 1.556;
+    color: #2c3e50;
+    font-size: 18px;
+}
+.step-item p {
+    font-family: "Proxima Nova";
+    color: rgb(128, 139, 150);
+    line-height: 1.625;     
+}
+.step-item:nth-child(2)::before {
+    display: block;
+    position: absolute;
+    top: 70px;
+    right: 80%;
+    content: "";
+    background-color: rgb(34, 26, 64);
+    opacity: 0.102;
+    width: 40%;
+    height: 2px;  
+}
+.step-item:nth-child(2)::after {
+    display: block;
+    position: absolute;
+    top: 70px;
+    left: 80%;
+    content: "";
+    background-color: rgb(34, 26, 64);
+    opacity: 0.102;
+    width: 40%;
+    height: 2px;  
+}
+/* share section */
+.share-section {
+    padding: 200px 0;
+    background-color: #f9fdff;
+    background-image: url("../img/phones-bg.png");
+    background-repeat: no-repeat;
+    background-position: top right;
+}
+.share h3 {
+    font-size: 24px;
+    font-family: "Circular Std Medium";
+    color: rgb(44, 62, 80);
+    line-height: 1.417;    
+}
+.share p {
+    font-size: 18px;
+    font-family: "Proxima Nova";
+    color: rgb(128, 139, 150);
+    line-height: 1.556;    
+}
+.wifi-pluses {
+    margin: 15px 0;
+}
+.wifi-pluses li {
+    font-size: 16px;
+    font-family: "Proxima Nova";
+    color: rgb(44, 62, 80);
+    line-height: 1.75;    
+}
+.wifi-pluses li:nth-child(1)::before {
+    display: inline-block;
+    vertical-align: middle;
+    padding-right: 20px;
+    content: url(../img/shield.png);
+
+}
+.wifi-pluses li:nth-child(2)::before {
+    display: inline-block;
+    vertical-align: middle;
+    padding-right: 20px;
+    content: url(../img/wifi.png);
+
+}
+.wifi-pluses li:nth-child(3)::before {
+    display: inline-block;
+    vertical-align: middle;
+    padding-right: 23px;
+    padding-left: 3px;
+    content: url(../img/time.png);
+
+}
+/*review section */
+.review-section {
+    padding: 200px 0 150px 0;
+}
+.graphic-left {
+    position: relative;
+}
+.graphic-left img {
+    width: 100%;
+    position: absolute;
+    top: -90px;
+    right: 0;
+}
+.review {
+    padding: 0 35px;
+}
+.review h3 {
+    font-size: 24px;
+    font-family: "Circular Std Medium";
+    color: rgb(44, 62, 80);
+    line-height: 1.417;    
+}
+.review p {
+    font-size: 18px;
+    font-family: "Proxima Nova";
+    color: rgb(128, 139, 150);
+    line-height: 1.556;    
+}
+.review-pluses {
+    margin: 15px 0;
+}
+.review-pluses li {
+    font-size: 16px;
+    font-family: "Proxima Nova";
+    color: rgb(44, 62, 80);
+    line-height: 1.75;    
+}
+.review-pluses li:nth-child(1)::before {
+    display: inline-block;
+    vertical-align: middle;
+    padding-right: 20px;
+    content: url(../img/desc.png);
+
+}
+.review-pluses li:nth-child(2)::before {
+    display: inline-block;
+    vertical-align: middle;
+    padding-right: 20px;
+    content: url(../img/user.png);
+
+}
+.review-pluses li:nth-child(3)::before {
+    display: inline-block;
+    vertical-align: middle;
+    padding-right: 20px;
+    content: url(../img/statistic.png);
+
+}
+/* logs section */
+.logs-section {
+    padding: 100px 0;
+    background-color: #f9fdff;
+}
+.logs-content {
+    padding: 0 35px;
+}
+.logs-content h3 {
+    font-size: 24px;
+    font-family: "Circular Std Medium";
+    color: rgb(44, 62, 80);
+    line-height: 1.417;    
+}
+.logs-content p {
+    font-size: 18px;
+    font-family: "Proxima Nova";
+    color: rgb(128, 139, 150);
+    line-height: 1.556;    
+}
+.logs-pluses {
+    margin: 15px 0;
+}
+.logs-pluses li {
+    font-size: 16px;
+    font-family: "Proxima Nova";
+    color: rgb(44, 62, 80);
+    line-height: 1.75;    
+}
+.logs-pluses li:nth-child(1)::before {
+    display: inline-block;
+    vertical-align: middle;
+    padding-right: 20px;
+    content: url(../img/mail.png);
+
+}
+.logs-pluses li:nth-child(2)::before {
+    display: inline-block;
+    vertical-align: middle;
+    padding-right: 20px;
+    content: url(../img/member.png);
+
+}
+.logs-pluses li:nth-child(3)::before {
+    display: inline-block;
+    vertical-align: middle;
+    padding-right: 20px;
+    content: url(../img/stat.png);
+
+}
+.logs-img {
+    position: relative;
+}
+.logs-img img {
+    width: 100%;
+    position: absolute;
+    top: -70px;
+}
+/* join section */
+.join-section {
+    background-color: #1e232d;
+}
+.join-us {
+    position: relative;
+    text-align: center;
+}
+.join-us > h2 {
+    padding-top: 120px;
+    padding-bottom: 20px;
+    font-size: 32px;
+    font-family: "Circular Std Medium";
+    color: rgb(255, 255, 255);
+    line-height: 1.2;   
+}
+.join-us > p {
+    font-size: 18px;
+    font-family: "Proxima Nova";
+    color: rgba(255, 255, 255, 0.4);
+    line-height: 1.556;
+}
+.sponsors-list {
+    display: flex;
+    justify-content: space-between;
+    padding: 100px 150px;
+    padding-bottom: 340px;
+}
+.subscribe-box {
+    border-radius: 3px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 10px 17.321px 40px 0px rgba(121, 102, 255, 0.1);
+    position: absolute;
+    bottom: -120px;
+    left: 30%;
+    width: 40%;
+    height: 320px;   
+}
+.subscribe-box h2 {
+        font-size: 32px;
+        font-family: "Circular Std Medium";
+        color: rgb(44, 62, 80);
+        line-height: 1.2;
+        padding-top: 70px;
+}
+.subscribe-box p {
+    font-size: 18px;
+    font-family: "Proxima Nova";
+    color: rgb(128, 139, 150);
+    line-height: 1.2;  
+}
+.subscribe-box a {
+    color: #83cd32;
+    font-size: 14px;
+    font-family: "Circular Std Book";
+}
+.subscribe-form {
+    padding-top: 35px;
+    padding-bottom: 20px;
+}
+.subscribe-form input {
+    height: 50px;
+    width: 45%;
+    font-size: 14px;
+    font-family: "Proxima Nova";
+    color: #2c3e50;
+    padding-left: 20px;
+    border-radius: 3px;
+    border: 1px solid #d7dfe4;
+    background-color: #edf5f9;
+}
+.subscribe-form button {
+    margin-left: -5px;
+    width: 155px;
+    height: 50px;
+    font-size: 14px;
+    font-family: "Circular Std Bold";
+    color: #fff;
+    background-color: #83cd32;
+    border: 0;
+    border-radius: 3px;
+}
+/* footer section */
+.footer-section {
+    padding-top: 200px;
+    padding-bottom: 50px;
+}
+.footer-item h2 {
+    font-size: 12px;
+    font-family: "Circular Std Bold";
+    color: rgb(44, 62, 80);
+    text-transform: uppercase;
+    line-height: 1.833;     
+}
+.footer-item p {
+    padding: 20px 0;
+    font-size: 14px;
+    font-family: "Proxima Nova";
+    color: rgb(128, 139, 150);
+    line-height: 1.643;     
+}
+.footer-item > a {
+    color: #83cd32;
+}
+.footer-item img {
+    margin-top: -8px;
+}
+.footer-links {
+    padding-top: 20px;
+}
+.footer-links li {
+    padding: 10px 0;
+}
+.footer-links li a {
+    text-decoration: none;
+    font-size: 14px;
+    font-family: "Proxima Nova";
+    color: rgb(128, 139, 150);
+    transition: 0.5s ease;
+}
+.footer-links li a:hover {
+    color: #000;
+}
+/* buttons */
+.btn-green {
+    padding: 17px 40px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    font-family: 'Circular Std Bold';
+    background-color: #83cd32;
+    border-radius: 3px;
+    transition: 0.5s ease;
+}
+.btn-green:hover, .btn-green:focus {
+    outline: 0;
+    box-shadow: 0 0 10px #83cd32;
+}
+.btn-green:active {
+    background-color: #93e63b;
+}
+.link-more {
+    font-size: 18px;
+    font-family: "Circular Std Medium";
+    color: rgb(29, 171, 242);
+    line-height: 1.2;
+    text-decoration: none;
+}
+.link-more::after {
+    display: inline;
+    padding-left: 10px;
+    vertical-align: middle;
+    content: url(../img/more-arrow.png);
+}
+.link-more-orange {
+    font-size: 18px;
+    font-family: "Circular Std Medium";
+    color: #f3b109;
+    line-height: 1.2;
+    text-decoration: none;
+}
+.link-more-orange::after {
+    display: inline;
+    padding-left: 10px;
+    vertical-align: middle;
+    content: url(../img/more-arrow-orange.png);
+}
+.link-more-green {
+    font-size: 18px;
+    font-family: "Circular Std Medium";
+    color: #45d68b;
+    line-height: 1.2;
+    text-decoration: none;
+}
+.link-more-green::after {
+    display: inline;
+    padding-left: 10px;
+    vertical-align: middle;
+    content: url(../img/more-arrow-green.png);
+}
